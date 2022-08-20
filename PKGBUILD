@@ -5,7 +5,7 @@
 
 pkgname=rtw88-dkms-git
 _pkgname=rtw88
-pkgver=r141.c7799b4
+pkgver=r143.6f8589e
 pkgrel=1
 pkgdesc='Newest Realtek rtlwifi codes'
 arch=('any')
