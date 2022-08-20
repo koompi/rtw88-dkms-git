@@ -27,8 +27,8 @@ pkgver() {
 }
 
 package() {
-	install -Dm640 "${srcdir}/rtw_blacklist.conf" "${pkgdir}/etc/modprobe.d/rtw_blacklist.conf"
-	install -Dm640 "${srcdir}/rtw.conf" "${pkgdir}/etc/modprobe.d/rtw.conf"
+	install -Dm644 "${srcdir}/rtw_blacklist.conf" "${pkgdir}/etc/modprobe.d/rtw_blacklist.conf"
+	install -Dm644 "${srcdir}/rtw.conf" "${pkgdir}/etc/modprobe.d/rtw.conf"
 	install -dm 755 "${pkgdir}/usr/src"
 	cp -dr --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/src/${_pkgname}-${pkgver}"
 	
